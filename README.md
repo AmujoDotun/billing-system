@@ -33,6 +33,10 @@ in every 2 seconds, we bill 6 users
 since there are 1800 of 2 seconds in hour, that means we can process 6* 1800 users in an hour 
 + 10800 users/ per hour
 
-Don't let forget that the process or approched used here is Asynchronously meaning all request are taking place at the sametime.
+Don't let not forget that the process or approched used here is Asynchronously meaning all request are taking place at the sametime.
 
-Thank you.
+## On the other hand since we using Asynchronously
+
+Using Process Control in PHP you can make let's say 100 api calls to the third party app ... For each api call fork a process from the main process. 
+
+If an api call takes 1.6s to complete ... running 100 calls in parrallel will take about 2s to complete. Reference: pcntl functions
