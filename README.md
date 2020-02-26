@@ -5,9 +5,11 @@
 
 ## Let get to the procedure.
 
-First query 20 users
-Loop through those 20 users(20 users per batch @ 1.6sec is possible because we using asynchronously)
-Make an asyn call to the API for billing those 20 users(Using asyn means you making all your request at once but one request is not waiting another request to complete before it start)
+=> First query 20 users
+
+=> Loop through those 20 users(20 users per batch @ 1.6sec is possible because we using asynchronously)
+
+=> Make an asyn call to the API for billing those 20 users(Using asyn means you making all your request at once but one request is not waiting for another request to complete before it start)
 
 
 
